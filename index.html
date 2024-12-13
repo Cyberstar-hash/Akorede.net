@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akorede.net</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <img class="lg" src="i.jpg" alt="logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="image-container">
+        <img src="images.png" alt="Click Me" class="clickable-image" onclick="toggleDropdown()">
+        <div id="dropdownMenu" class="dropdown-content">
+            <a href="#" onclick="showInfo()">Info</a>
+            <a href="#contact">Contacts</a>
+             <a href="index3.html">Direct Message</a>
+        </div>
+    </div>
+         
+        </ul>
+        
+    </nav>
+    <header>
+        <h1> Akorede Bolujoko</h1>
+        <h3>Web-Developer</h3>
+        <p>Your go-to source for insights, updates, and services.</p>
+    </header>
+    
+    
+    
+    <section id="about">
+        <h2>About Akorede Bolujoko</h2>
+        <p>Welcome! I am Akorede Bolujoko, and here is where I share my work and ideas.I am a science and Tech <i>Enthusiast</i> who explores and discovers new things.I am a <i>Web-Developer</i> with different Coding skills. i.e;</p>
+        <ul class="languages" type="square">
+            <li>HTML (<i>hypertext markup language</i>)</li>
+            <li>CSS (<i>cascading style sheets</i>)</li>
+            <li>PYTHON (<i>dynamic language</i>)</li>
+            <li>BOOTSTRAP (<I>framework</I>)</li>
+        </ul>
+        <div class="ply">
+     <div class="vid">  
+       <video width="100%"id="smallVideo" autoplay muted loop>
+            <source src="i.mp4" type="video/mp4">
+        </div>
+        
+            <center><a class="play" href="i.mp4">
+            <button class="button">
+                <span></span>
+                 <i class="i">Play</i>
+                 </button></a></center>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Check out some of my recent projects, such as:</p>
+        <ul class="copyright">
+            <li>Cyberspace</li>
+            <li>Cybersearch</li>
+            <li>Partnership with Jeta</li>
+        </ul>
+        <i>Click the Go... button to view.</i>
+     <a class="play" href="index3.html"> <button class="button">
+          <span></span>
+       <i class="i">Go...</i>
+          </button></a>
+        <!-- image slider -->
+        <!-- You can add images or descriptions of projects here -->
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <b>You can click on the links in the Direct contact menu.(DM).</b>
+       <ul class="copyright">
+    <li>Email:akoredebolujoko@gmail.com</li>
+            <li>TikTok:@Cipher_star</li>
+            <li>Telegram:Akorede</li>
+        </ul>
+        <p>If you'd like to reach out, please fill out the form below.</p>
+        <form onsubmit="handleSubmit(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name"  required maxlength="30">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email"  required>
+            <label for="message">Message:</label>
+            <textarea style ="outline:none;"type="text" class="message" name="message" maxlength="150" required ></textarea>
+            <a href="#"><button type="submit" onclick="alert('Good time messaging, but your message might not get to Dev Akorede due to data traffic, try sending through the direct message menu. Thanks!!')">Submit</button></a>
+        </form>
+        <p id="message"></p>
+    </section>
+    <footer><a href="#">copyright ©️Akorede.net</a></footer>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevents page reload
+            const name = document.getElementById('name').value;
+            const message = `Thanks ${name}!! for messaging Akorede, your message has been delivered.`;
+            document.getElementById('message').textContent = message;
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

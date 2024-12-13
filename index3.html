@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akorede-web</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <img class="lg" src="i.jpg" alt="logo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#footer">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#DM">Contact</a></li>
+            <div class="image-container">
+        <img src="images.png" alt="Click Me" class="clickable-image" onclick="toggleDropdown()">
+        <div id="dropdownMenu" class="dropdown-content">
+            <a href="#" onclick="showInfo()">Info</a>
+            <a href="index.html">Contacts</a>
+             <a href="#DM">Direct Message</a>
+        </div>
+    </div>
+         
+        </ul>
+        
+    </nav>
+    <div class="s-im">
+        <div class="slider-container">
+        <div class="slider">
+            <div class="slide"><img src="image1.jpg" alt="Image 1"><b class="text">Innovation</b></div>
+            <div class="slide"><img src="image2.jpg" alt="Image 2"><b class="text">Science</b></div>
+            <div class="slide"><img src="image3.jpg" alt="Image 3"><b class="text">Technology</b></div>
+            <div class="slide"><img src="image4.jpg" alt="Image 4"><b class="text">Coding</b></div>
+            <div class="slide"><img src="image5.jpg" alt="Image 5"><b class="text">Research</b></div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    
+    </div>
+<section id="Projects">
+    <h2>Projects</h2>
+    <b>Click the links below to view!!</b>
+       <ul>
+           <li><a href="#"onclick="showInfos()">Cybersearch.tech</a></li>
+           <li><a href="#" onclick="showInfos()">Cyberspace.tech</a></li>
+           <li><a href="#" onclick="showInfos()">BigIT.edu</a></li></li>
+           
+               <b style="margin-left:-3%;">Partnership with: Jeta comms</b>
+              <li><a href="https://jetacoms.tech">Jetacomms.tech</a></li></li>
+       </ul>
+       </section>
+       <section>
+           <h2 id="DM">Direct Message (DM).</h2>
+           <b>Reach out through the Following:</b>
+           <ul type="square" class="links">
+               <li><i>Email:</i><emp style="color:#6495ed;"><a href="mailto:akoredebolujoko@gmail.com" class="email-link">akoredebolujoko@gmail.com</a></emp></li>
+               <li><i>Telegram:</i><a href="https://t.me/${username}?text=${message" id="telegramLink">Akorede(Techstar9)</a></li>
+               <li><i>TikTok:</i><a href="https://www.tiktok.com/@cipher_star"id="tiktokLink">Akorede(Cyber cipher_star)</a></li>
+           </ul>
+       </section>
+     <footer id="footer"><a href="#">copyright ©️Akorede.net</a></footer>
+     <script>
+         document.getElementById('telegramLink').addEventListener('click', function (e) {
+            e.preventDefault();
+            // Construct the Telegram link to message you with a prefilled text
+            const username = "Techstar9";
+            const message = encodeURIComponent("Hello, you can also reach me at akoredebolujoko@gmail.com");
+            const telegramLink = `https://t.me/${username}?text=${message}`;
+            // Open the Telegram app or prompt Telegram Web
+            window.location.href = telegramLink;
+        });
+        document.getElementById('tiktokLink').addEventListener('click', function (e) {
+            e.preventDefault();
+            // TikTok profile link
+            const tiktokLink = "https://www.tiktok.com/@cipher_star";
+            // Open the TikTok app or default to the browser
+            window.location.href = tiktokLink;
+        });
+     </script>
+    <script src="script.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
