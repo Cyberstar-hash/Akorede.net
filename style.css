@@ -1,0 +1,270 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow :hidden; */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #d3d3d3;
+}
+
+header {
+    text-align: center;
+    padding: 6.5%; 
+    background-color: #000;
+}
+nav{
+    top:0;
+    position:sticky;
+    z-index:1100;
+ }
+ header p{
+     color: #333;
+ }
+ header p:hover{
+     color: #fff;
+ }
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+   background-color: #000;
+}
+
+nav ul li {
+    margin: 0 3%;
+}
+select{display-node;}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color:#6485ed;
+}
+
+section {
+    padding:3%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}1
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+form  button{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+form  button:hover {
+    background:#000;
+    padding:15px;
+}
+footer{
+    background: #000;
+    text-align: center ;
+    height :55px;
+    display:flex;
+    justify-content:center;
+    align-items: center ;   
+}
+footer:hover{
+  background:#333;
+}
+footer a{
+    color :white;
+    text-decoration:none;
+    font-size:100%;
+}
+.lg{
+    height:19px;
+    cursor: pointer;
+}
+h1{
+    color:white;
+}
+b{
+    color:#000;
+}
+h3{
+    color: #fff;
+}
+h3:hover{
+    color:#6495ed;
+}
+h1:hover{
+    color: transparent;
+    line-height:1;
+    /* font-size:1.2cm; */
+    text-transform: uppercase;
+    background-image:linear-gradient(to left, #0000ff, #add8e6, #6495ed, #87ceeb);
+  -webkit-background-clip:text;
+     animation:animate 5s linear infinite;
+  -webkit-background-size:500%;
+     background-size:500%;
+     text-align: center ;  
+}
+@keyframes animate{
+    0%{background-position:0 100%}
+   50%{background-position:100% 0}
+  100%{background-position:0 100%}
+}
+.languages{
+    /* margin-top:2%;
+    margin-left:3%; */
+    padding: 2% 0% 1% 4%;
+}
+input{
+    outline:none;
+}
+.message{
+    height:20%:
+    outline:none;
+}
+input:hover{
+    outline:3px solid  cornflowerblue;
+    transition:200ms;
+}
+.copyright{
+    /* margin-left:3%;
+    margin-top:2%; */
+    padding: 2% 0% 1% 4%;
+}
+.image-container{
+    display: inline-block;
+    height:17px;
+    margin-top:0;
+    margin-right:4px;
+}
+.play{
+    text-decoration:none;
+    color: #6495ed;
+}
+.button{
+    width: 30%;
+    text-align: center;
+    padding: 3% 0%;
+    border-radius:30px;
+    font-weight:bold;
+    border:3px solid #222;
+    background : transparent;
+    /* color: #6495ed; */
+    cursor:pointer;
+    position:relative;
+    overflow: hidden;
+    z-index:10;
+    outline:none;
+}
+span{
+    background:#222;
+    width: 0;
+    height: 100%;
+    border-radius:30px;
+    position: absolute;
+    left:0;
+    bottom:0;
+    z-index:-1;
+    transition:.5s;
+    
+}
+.button:hover span{
+    width: 100%;
+}
+.button:hover{
+    border:none;
+}
+.clickable-image {
+     height:17px;
+    cursor: pointer;
+}
+.ply{
+    display:grid;
+    justify-content: center;
+    align-items: center;
+}
+.i{
+    text-decoration:none;
+    color:#fff;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+/* Extra Small Devices (Mobile) */
+@media (max-width: 480px) {
+    /* Styles for phones */
+    body{
+        display:grid;
+    }
+}
+
+/* Small Devices (Large Mobile, Small Tablets) */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Styles for small tablets and large phones */body{
+        display:grid;
+    }
+}
+
+/* Medium Devices (Tablets, Small Laptops) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for tablets and small laptops */body{
+        display:grid;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    body{
+        display:grid;
+    }/* Styles for desktops */
+}
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1201px) {
+    body{
+        display:grid;
+    }
+    /* Styles for large desktops */
+}

@@ -1,0 +1,105 @@
+body{
+    padding:0;
+    margin: 0;
+    /* overflow: hidden;*/
+    background: #ddd;
+}
+a{
+    text-decoration:none;
+    color:#6485ed;
+    font-weight:350;
+}
+section ul{
+    margin-left:3%;
+}
+section{
+    padding:3%;
+}
+.links li{
+    font-size:120%;
+    color: #111;
+}
+h2{
+    color: #6485ed;
+}
+b{
+    color: #000;
+}
+nav{
+    z-index:1100;
+}
+
+.s-im{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin-top:5%;
+    margin-bottom:10%;
+}
+
+.slider-container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: #000;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+.text{
+    color:#fff;
+    margin:0% 0% 0% 2%;
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+    outline:none;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition:.5s;
+    /* background: #6495ed; */
+}
+
+@media (max-width: 768px) {
+    button {
+        padding: 8px 12px;
+    }
+}
